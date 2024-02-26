@@ -1,0 +1,1 @@
+while true;  do {  echo -e "HTTP/1.1 503\r\n"; echo "$(cat index.html)"; } | nc -lvp  8080;  done
